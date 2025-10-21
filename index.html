@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Time Table</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-image: url('https://wallpapercave.com/wp/wp2805604.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+      color: #161616;
+    }
+   
+    
+      
+    
+    .container {
+      position: relative;
+      z-index: 1;
+      width: 90%;
+      max-width: 1000px;
+      text-align: center;
+    }
+    h1 {
+      margin-bottom: 20px;
+      font-weight: 700;
+      font-size: 2.5em;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.15);
+      background: white;
+      margin: 0 auto;
+    }
+    th, td {
+      border: 1px solid #f0b5b5;
+      padding: 10px;
+      text-align: center;
+      vertical-align: middle;
+      transition: background-color 0.3s ease;
+    }
+    th {
+      background: #eaeaea;
+      font-weight: 600;
+    }
+    tbody td:hover {
+      background-color: #d0e8ff;
+      cursor: pointer;
+    }
+    .yellow { background: #F4C542; }
+    .green { background: #A3C993; }
+    .blue { background: #5CC4E6; }
+    .darkGreen { background: #12C281; }
+    .gray { background: #CED2D2; }
+    .lightYellow { background: #EFE143; }
+    .salmon { background: #FFD7B5; }
+    .peach { background: #FFD39B; }
+    .teal { background: #61C47F; }
+    .lunch { background: #ffffff; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Time Table</h1>
+    <table>
+      <tr>
+        <th>Time/Day</th>
+        <th>I<br>08:50-09:40</th>
+        <th>II<br>09:40-10:30</th>
+        <th>III<br>10:40-11:30</th>
+        <th>IV<br>11:30-12:20</th>
+        <th>V<br>12:20-1:10</th>
+        <th>VI<br>01:10-02:00</th>
+        <th>VII<br>02:00-02:50</th>
+        <th>VIII<br>02:50-03:40</th>
+        <th>IX<br>03:40-04:30</th>
+      </tr>
+      <tr>
+        <td>Monday</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-305</td>
+        <td class="green">25AS101<br>(STS)<br>RJ-305</td>
+        <td class="darkGreen">25AS103<br>(TR)<br>RJ-305</td>
+        <td class="lightYellow">25AI101<br>(RS)<br>RJ-305</td>
+        <td class="lunch" rowspan="5">LUNCH</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-206</td>
+        <td class="blue">25EL101<br>(PRM)<br>RJ-206</td>
+        <td class="teal" colspan="2">25AS151<br>(STS, YT)<br>KC Block III Floor (KC-310)</td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td class="gray" colspan="2">25VA151<br>(RPS)<br>RJ-301</td>
+        <td class="green">25AS101<br>(STS)<br>RJ-301</td>
+        <td class="lightYellow">25AI101<br>(RS)<br>RJ-301</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-207</td>
+        <td class="blue">25EL101<br>(PRM)<br>RJ-207</td>
+        <td class="salmon">25CS101<br>(SHV)<br>RJ-207</td>
+        <td class="salmon">25CS101<br>(SHV)<br>RJ-207</td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td class="salmon">25CS101<br>(SHV)<br>RJ-207</td>
+        <td class="salmon">25CS101<br>(SHV)<br>RJ-207</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-207</td>
+        <td class="blue">25EL101<br>(PRM)<br>RJ-207</td>
+        <td class="blue">25EL151<br>(PRM, AKG)<br>RJ-BASEMENT</td>
+        <td class="green" colspan="2">25AS101<br>(STS)<br>RJ-306</td>
+        <td class="lunch"></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td class="blue">25EL101<br>(PRM)<br>RJ-301</td>
+        <td class="darkGreen">25AS103<br>(TR)<br>RJ-301</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-301</td>
+        <td class="gray">Mentor-Mentee<br>(STS, SHC)<br>RJ-301</td>
+        <td class="yellow" colspan="2">25AS102<br>(SHC)<br>RJ-301</td>
+        <td class="salmon" colspan="2">25CS151<br>(SHV)<br>RJ-301</td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td class="gray">25VA151<br>(RPS)<br>RJ-207</td>
+        <td class="lightYellow">25AI101<br>(RS)<br>RJ-207</td>
+        <td class="yellow">25AS102<br>(SHC)<br>RJ-207</td>
+        <td class="green">25AS101<br>(STS)<br>RJ-207</td>
+        <td class="peach" colspan="2">25ME152<br>(MK,AD)<br>RJ Block I Floor (RJ-109)</td>
+        <td class="blue">25EL101<br>(PRM)<br>RJ-204</td>
+        <td class="darkGreen">25AS103<br>(TR)<br>RJ-204</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
